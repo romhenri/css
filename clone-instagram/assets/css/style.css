@@ -1,0 +1,139 @@
+/*  */
+
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.89);
+}
+
+@font-face {
+    font-family: Billabong;
+    src: url(fonts/Billabong.ttf);
+}
+
+/*====================================*/
+
+#screen {
+height: 720px;
+width: 360px;
+margin: auto;
+
+border: 2px solid black;
+
+background-color: black;
+color: aliceblue;
+overflow-x: hidden;
+}
+
+#topMenu {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 15px;
+
+    font-family: Billabong;
+    font-size: 30px
+} #topMenu p {font-family: Billabong;}
+
+
+#topButtons {
+
+}
+
+.icon {
+    width: 30px;
+}
+
+/*====================================*/
+
+#storiesSpace {
+    gap: 17px;
+    margin-left: 15px;
+    margin-top: 2px;
+    display: flex;
+
+    overflow-x: scroll;
+} 
+#storiesSpace::-webkit-scrollbar { 
+	opacity: 0;
+    height: 3px;
+}
+
+.storyBox {
+    display: flex; flex-direction: column;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px; text-align: center;
+}
+
+#userProfile {
+    border-radius: 990px;
+    margin-bottom: 5px;
+}
+
+.stories {
+
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) 
+    
+    padding-box, linear-gradient(45deg,
+    #FFC800, #9F0094) border-box;
+
+	border-radius: 50em;
+
+	border: 2.7px solid transparent;
+
+    padding: 3px;
+}
+
+/*====================================*/
+
+#contentSpace {
+margin-top: 10px;
+}
+
+.storiesPost {
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) 
+    padding-box, linear-gradient(45deg,
+    #FFC800, #9F0094) border-box;
+
+	border-radius: 50em;
+
+	border: 2px solid transparent;
+
+    padding: 3px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#postTop {
+    display: flex; flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+#postTopLeft {
+    display: flex; flex-direction: row;
+}
+
+#postText
+
+#postTopRight {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.point {
+    background-color: white;
+    width: 3px;
+    height: 3px;
+    border-radius: 99px;
+}
+
+.post {
+    overflow-x: hidden;
+}
