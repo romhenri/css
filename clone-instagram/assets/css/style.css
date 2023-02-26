@@ -157,7 +157,24 @@ margin-top: 10px;
 /*====================================*/
 
 #navBar {
-    width: 360px; height: 50px;
+    width: 100%; height: 50px; margin: auto;
+    max-width: 360px;
     position: fixed; top: 93%;
     background-color: rgba(95, 95, 95, 0.212);
+}
+
+/*====================================*/
+
+@media screen and (max-width: 420px) {
+    
+    #screen {
+        height: 1020px;
+        width: 100%;
+        margin: auto;
+
+        color: aliceblue;
+        overflow-x: hidden;
+    }
+
+    #navBar {max-width: 420px;}
 }
