@@ -42,12 +42,39 @@ overflow-x: hidden;
 } #topMenu p {font-family: Billabong;}
 
 
+#imgLogoName {
+    position: relative; top: 8px;
+}
+
 #topButtons {margin-right: 8px;}
 
 .icon {width: 23px; margin-left: 8px; cursor: pointer;}
 .icon2 {width: 20px; margin-left: 8px; margin-right: 3px; cursor: pointer;}
 .icon3 {width: 23px; margin-left: 8px; position: relative; top:2px; right: 3px; cursor: pointer;}
 .icon4 {width: 20px; margin-left: 8px; margin-right: 18px; cursor: pointer;}
+
+
+#addStoryButton {
+    height: 16px; width: 16px;
+    background-color: #0099ff;
+    border-radius: 999px; z-index: 3;
+    display: flex; align-items: center; text-align: center;
+    justify-content: center; cursor: pointer;
+
+    position: relative; top: 92px; right: 133px;
+
+    border: 2px solid black;
+}
+
+#lineAddStory1 {
+    width: 9px; height: 1px; background-color: #ffff;
+    position: relative; left: 4px;
+}
+#lineAddStory2 {
+    width: 9px; height: 1px; background-color: #ffff;
+    rotate: 90deg;
+    position: relative; right: 4px;
+}
 
 /*====================================*/
 
