@@ -28,7 +28,7 @@ border: 2px transparent black;
 
 background-color: black;
 color: aliceblue;
-overflow-x: hidden;
+overflow-x: hidden; overflow-y: hidden;
 }
 
 #topMenu {
@@ -145,7 +145,7 @@ margin-top: 10px;
 #postTop {
     display: flex; flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 5px;
+    margin-bottom: 5px; z-index: 2;
 }
 
 #postTopLeft {
@@ -186,9 +186,9 @@ margin-top: 10px;
 #navBar {
     width: 100%; height: 50px; margin: auto;
     max-width: 360px;
-    position: fixed; top: 93%;
-    background-color: rgba(95, 95, 95, 0.212);
-}
+    position: fixed; top: 93%; z-index: 1;
+    background-color: rgb(14, 14, 14);
+}z
 
 /*====================================*/
 
