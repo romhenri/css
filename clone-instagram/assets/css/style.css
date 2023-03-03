@@ -186,13 +186,13 @@ margin-top: 10px;
 #navBar {
     width: 100%; height: 50px; margin: auto;
     max-width: 360px;
-    position: fixed; top: 93%; z-index: 1;
+    position: fixed; top: 94%; z-index: 1;
     background-color: rgb(14, 14, 14);
-}z
+}
 
 /*====================================*/
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 500px) {
     
     #screen {
         height: 1020px;
