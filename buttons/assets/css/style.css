@@ -56,13 +56,28 @@ a:hover {color: #fff !important; }
 }
 
 
-.purple {
+.purple-grd {
     background-image: linear-gradient(
         180deg,
         #8100b4 10%,
         #480069
     ); color: #fff;
 }
+.blue-grd {
+    background-image: linear-gradient(
+        180deg,
+        #2629e4 10%,
+        #0b0069
+    ); color: #fff;
+}
+.orange-grd {
+    background-image: linear-gradient(
+        180deg,
+        #ffa825 10%,
+        #a75f01
+    ); color: #fff;
+}
+
 
 /* === ANIMATION ============================================ */
 
@@ -71,6 +86,12 @@ a:hover {color: #fff !important; }
 
 .neon-purple:hover {box-shadow: 0px 0px 20px 1px #8100b4;}
 .neon-purple:active {box-shadow: 0px 0px 3px 1px #8100b4;}
+
+.neon-blue:hover {box-shadow: 0px 0px 20px 1px #2629e4 ;}
+.neon-blue:active {box-shadow: 0px 0px 3px 1px #2629e4 ;}
+
+.neon-orange:hover {box-shadow: 0px 0px 20px 1px #ffa825 ;}
+.neon-orange:active {box-shadow: 0px 0px 3px 1px #ffa825 ;}
 
 /* === MEDIA QUERIES ============================================ */
 
