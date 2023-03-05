@@ -1,6 +1,5 @@
 const CMD = document.getElementById('buttonColorMode')
-const BODY = document.querySelectorAll("body")
-
+const BODY = document.getElementById('body')
 CMD.addEventListener("click", change)
 
 function change() {
