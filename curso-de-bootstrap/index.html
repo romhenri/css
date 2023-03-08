@@ -4,16 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudos Bootstrap</title>
+    <title>Bootstrap | Início</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="src/img/icon-default.png" type="image/x-icon">
 </head>
-<body data-bs-theme="dark">
+<body class="bg-black bg-opacity-10">
     
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary text-light bg-gradient">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light m-x-5 m-1" href="#">Bootstrap v5</a>
+      <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item text-light">
+            <a class="nav-link active text-light" aria-current="page" href="index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="components.html">Components</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#footer">Footer</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light text-light search" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
     <div class="container-fluid">
         <div class="col-12 col-xxl-8 mx-auto">
-            <div class="container m-x-3 mt-4 mb-4">
+            <div class="container m-x-3 mt-4 mb-4" id="#infoContainer">
                 <h1>Curso de Bootstrap</h1>
         
             <hr>
@@ -23,14 +49,16 @@
                 </p>
 
                 <p>Importante lembrar que Bootstrap é <strong>Mobile-First!</strong></p>
+
+                <p>Isso Implica que inicialmente devemos pensar no layout mobile, e depois adaptar para experiência de desktop. As classes de containers são baseadas em width a partir das marcas. Exemplo: <code>class="col-12 col-xxl-8 mx-auto"</code>. Neste trecho vemos primeiro a configuração do layout mobile primeiro (<code>col-12</code>), depois, a adaptação para telas a partir de 1320px (<code>col-xxl-8</code>).</p>
             </div>
         
             <div class="container m-x-3 mt-4 mb-5 overflow-scroll">
-                <table class="table">
+                <table class="table table-hover table-striped">
                     <thead>
                       <tr>
                         <th scope="col">Classes</th>
-                        <th scope="col">Extra small</th>
+                        <th scope="col">Extra Small</th>
                         <th scope="col">Small</th>
                         <th scope="col">Medium</th>
                         <th scope="col">Large</th>
@@ -50,7 +78,7 @@
                     
                       </tr>
                       <tr>
-                        <th scope="row">.container-sm</th>
+                        <th scope="row">-sm</th>
                         <td colspan="1" class="text-center table-success">100%</td>
                         <td class="text-center table-info">540px</td>
                         <td class="text-center table-info">720px</td>
@@ -58,7 +86,7 @@
                         <td class="text-center table-info">1140px</td>
                         <td class="text-center table-info">1320px</td>
                       <tr>
-                        <th scope="row">.container-md</th>
+                        <th scope="row">-md</th>
                         <td colspan="2" class="text-center table-success">100%</td>
                         <td class="text-center table-info">720px</td>
                         <td class="text-center table-info">960px</td>
@@ -66,25 +94,25 @@
                         <td class="text-center table-info">1320px</td>
                       </tr>
                       <tr>
-                        <th scope="row">.container-lg</th>
+                        <th scope="row">-lg</th>
                         <td colspan="3" class="text-center table-success">100%</td>
-                        <td class="text-center table-info">720px</td>
+                        <td class="text-center table-info">960px</td>
                         <td class="text-center table-info">1140px</td>
                         <td class="text-center table-info">1320px</td>
                       </tr>
                       <tr>
-                        <th scope="row" >.container-xl</th>
+                        <th scope="row" >-xl</th>
                         <td colspan="4" class="text-center table-success">100%</td>
                         <td class="text-center table-info">1140px</td>
                         <td class="text-center table-info">1320px</td>
                       </tr>
                       <tr>
-                        <th scope="row">.container-xxl</th>
+                        <th scope="row">-xxl</th>
                         <td colspan="5"  class="text-center table-success">100%</td>
                         <td class="text-center table-info">1320px</td>
                       </tr>
                       <tr>
-                        <th scope="row">.container-fluid</th>
+                        <th scope="row">-fluid</th>
                         <td colspan="6" class="text-center table-success">100%</td>
                       </tr>
                     </tbody>
@@ -113,9 +141,27 @@
                 </button>
               </div>
         </div>
+
+        <div class="container col-12 col-xxl-8 mx-auto overflow-hidden">
+
+
+         <img src="src/img/print.png"  class="img-fluid" alt="">
+
+
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
+          <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z"/>
+          <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z"/>
+        </svg>
+
+
     </div>
 
-    <footer>
+  
+
+
+    <footer id="#footer">
         <br>
   
         <a href="https://www.linkedin.com/in/r%C3%B4mulo-henri-437763213/">Desenvolvido por Rômulo Henri</a> | <a href="https://github.com/henri2023">Github</a> |  <a href=>ReadMe</a>

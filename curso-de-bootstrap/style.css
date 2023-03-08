@@ -1,7 +1,17 @@
 footer, footer a {
     text-align: center; text-decoration: none;
-    color: #ffffff80; transition: 0.3s;
-    margin-bottom: 20px;
+    /* color: #ffffff80; */
+    color: #000000b7;
+    transition: 0.3s;margin-bottom: 20px;
 } footer a:hover { 
-    color: #ffff;
+    /* color: #ffff; */
+    color: #000;
 }
+
+/* #0D6EFD */
+
+/* ====================================================== */
+
+.search:hover {background: #277eff;}
+.search:active {background-color: #4c93fe;}
+.search:focus {background-color: #4c93fe;}
