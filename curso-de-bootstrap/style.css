@@ -1,0 +1,7 @@
+footer, footer a {
+    text-align: center; text-decoration: none;
+    color: #ffffff80; transition: 0.3s;
+    margin-bottom: 20px;
+} footer a:hover { 
+    color: #ffff;
+}
