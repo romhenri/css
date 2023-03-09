@@ -53,17 +53,13 @@ ul li {
     margin: 0px 10px 0px 10px;
 }
 
-.show {
-    /* height: 50vh; */
-}
-
 .navbar-nav-scroll {
     max-height: 50vh;
     overflow-y: visible;
 }
 
 .navbar-toggler:focus {
-    text-decoration: none;
-    outline: 0;
-    /* box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width); */
+    text-decoration: none !important;
+    outline: 0 !important;
+    box-shadow: none !important;
 }
