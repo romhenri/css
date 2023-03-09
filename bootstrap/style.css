@@ -11,7 +11,13 @@ footer, footer a {
 /* #0D6EFD */
 
 /* ====================================================== */
+.search {color:#fff;}
+.search:hover {background: #277eff; color:#fff;}
+.search:active {background-color: #4c93fe; color:#fff;}
+.search:focus {background-color: #4c93fe; color:#fff;}
 
-.search:hover {background: #277eff;}
-.search:active {background-color: #4c93fe;}
-.search:focus {background-color: #4c93fe;}
+
+.al-center {
+    display: flex; gap: 10px;
+    align-items: center;
+}
