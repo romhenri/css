@@ -11,13 +11,59 @@ footer, footer a {
 /* #0D6EFD */
 
 /* ====================================================== */
-.search {color:#fff;}
-.search:hover {background: #277eff; color:#fff;}
-.search:active {background-color: #4c93fe; color:#fff;}
-.search:focus {background-color: #4c93fe; color:#fff;}
+.search {color:#ffffff2c;}
+.search:hover {background:#ffffff14;}
+.search:active {background-color: #ffffff38;}
+/* .search:focus {background-color:#ffffff46;} */
 
 
 .al-center {
     display: flex; gap: 10px;
     align-items: center;
+}
+
+var {width: 30%; height: 30px; text-align: center;
+color: #fff;}
+
+
+.varColor1 {background-color: var(--bs-blue);}
+.varColor2 {background-color: var(--bs-indigo);}
+.varColor3 {background-color: var(--bs-purple);}
+.varColor4 {background-color: var(--bs-red);}
+.varColor5 {background-color: var(--bs-orange);}
+.varColor6 {background-color: var(--bs-yellow);}
+.varColor7 {background-color: var(--bs-green);}
+.varColor8 {background-color: var(--bs-teal);}
+
+nav {
+    background-color: indigo;
+}
+
+.navbar-toggler {
+    color: #fff !important;
+     /* background-color: #fff !important; */
+}
+
+.navbar-toggler-icon {
+    filter: brightness(20%);
+    filter: invert(100%); 
+}
+
+ul li {
+    margin: 0px 10px 0px 10px;
+}
+
+.show {
+    /* height: 50vh; */
+}
+
+.navbar-nav-scroll {
+    max-height: 50vh;
+    overflow-y: visible;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    /* box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width); */
 }

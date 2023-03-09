@@ -13,9 +13,9 @@
     
 <!-- === Navbar =============================================== -->
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-primary text-light bg-gradient sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light text-light bg-gradient sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand text-light m-x-5 m-1 al-center" href="#">
+      <a class="navbar-brand text-light mx-4  m-1 al-center" href="#">
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
           <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z"/>
           <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z"/>
@@ -25,7 +25,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse flex-row g-5" id="navbarScroll">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <ul class="navbar-nav me-auto mx-3 my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
           <li class="nav-item text-light">
             <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
           </li>
@@ -48,7 +48,7 @@
 
     <div class="container-fluid">
         <div class="col-12 col-xxl-8 mx-auto">
-            <div class="container m-x-3 mt-4 mb-4 lh-sm text-truncate" id="#infoContainer">
+            <div class="container m-x-3  pt-4 lh-sm" id="#infoHome">
                 <h1>Curso de Bootstrap</h1>
         
             <hr>
@@ -57,14 +57,21 @@
                     Bootstrap é um framework front-end que fornece estruturas de CSS para a criação de sites e aplicações responsivas de forma rápida e simples.
                 </p>
 
-                <p>Importante lembrar que Bootstrap é <strong>Mobile-First!</strong></p>
+            </div>
+
+            <div class="container m-x-3 mt-4 mb-2 lh-sm\" id="#infoContainer">
+
+              <h4>Estruturas com Contêineres.</h4>
+              <hr>  
+              <p>Importante lembrar que Bootstrap é <strong>Mobile-First!</strong></p>
 
                 <p>Isso Implica que inicialmente devemos pensar no layout mobile, e depois adaptar para experiência de desktop. As classes de containers são baseadas em width a partir das marcas. Exemplo: <code>class="col-12 col-xxl-8 mx-auto"</code>. Neste trecho vemos primeiro a configuração do layout mobile primeiro (<code>col-12</code>), depois, a adaptação para telas a partir de 1320px (<code>col-xxl-8</code>).</p>
+
             </div>
 
 <!-- === Tabela =============================================== -->
 
-            <div class="container m-x-3 mt-4 mb-5 overflow-auto">
+            <div class="container m-x-3 mt-2 mb-3 overflow-auto border-bo">
                 <table class="table table-hover table-striped">
                     <thead>
                       <tr>
@@ -135,8 +142,6 @@
                   </div>
             </div>
 
-            
-
 <!-- === Ilustração =============================================== -->
 
         <div class="container col-12 mx-auto">
@@ -151,10 +156,93 @@
         </div>
         </div>
 
+<!-- === Cores =============================================== -->
+
+<div class="container m-x-3 mt-4 mb-2 lh-sm\" id="#infoContainer">
+
+  <h4>Cores e Customização.</h4>
+  <hr>
+
+  <h5 class="mt-3">Cores de Padrões</h5>
+
+        <div class="container">
+          <div class="row g-2 my-2">
+             <div class="col-4 bg-primary text-white">
+                .bg-primary
+             </div>
+             <div class="col-4 bg-secondary text-white">
+                .bg-secondary
+             </div>
+             <div class="col-4 bg-success text-white">
+                .bg-success
+             </div>
+             <div class="col-4 bg-danger text-white">
+                .bg-danger
+             </div>
+             <div class="col-4 bg-warning text-white">
+                .bg-warning
+             </div>
+             <div class="col-4 bg-info text-white">
+                .bg-info
+             </div>
+             <div class="col-4 bg-light">
+                .bg-light
+             </div>
+             <div class="col-4 bg-dark text-white">
+                .bg-dark
+             </div>
+             <div class="col-4 bg-body">
+                .bg-body
+             </div>
+             <div class="col-4 bg-white">
+                .bg-white
+             </div>
+             <div class="col-4 bg-transparent">
+                .bg-transparent
+             </div>
+          </div>
+       </div>
+
+       <h5 class="mt-3">Cores de Variáveis</h5>
+
+
+       <div class="container">
+        <div class="row g-2 my-2 text-center text-light">
+
+          <div class="varColor1 var col-6">
+            blue
+          </div>
+          <div class="varColor2 var col-6">
+            indigo
+          </div>
+          <div class="varColor3 var col-6">
+            purple
+          </div>
+          <div class="varColor4 var col-6">
+            red
+          </div>
+          <div class="varColor5 var col-6">
+            orange
+          </div>
+          <div class="varColor6 var col-6">
+            yellow
+          </div>
+          <div class="varColor7 var col-6">
+            green
+          </div>
+          <div class="varColor8 var col-6">
+            teal
+          </div>
+       </div>
+
+       
+
+       </div>
+
+
 <!-- === Footer =============================================== -->
 
     </div>
-
 
     <footer id="#footer">
         <br>
