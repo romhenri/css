@@ -72,17 +72,22 @@ ul li {
     justify-content: space-between;
 }
 
-.tables {
-    display: flex;
-}
+.flex {display: flex; flex-direction: row;}
 
-.flex {display: flex;}
+
+@media (min-width: 512px) {
+    .tables {
+        display: flex;
+    }
+}
 
 @media (max-width: 512px) {
 
     .ff {
         flex-direction: column;
     }
+
+    .flex {display: flex; flex-direction: column;}
 
     #lineVideos iframe {
         width: 100%;
