@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="src/img/icon-default.png" type="image/x-icon">
 </head>
-<body class="bg-black bg-opacity-10">
-    
+    <body class="bg-black bg-opacity-10">
+  
 <!-- === Navbar =============================================== -->
 
   <nav class="navbar navbar-expand-lg navbar-light text-light bg-gradient sticky-top">
@@ -44,11 +44,14 @@
     </div>
   </nav>
 
-<!-- === Introduction =============================================== -->
+<!-- === Conteúdo Principal =============================================== -->
 
-    <div class="container-fluid">
-        <div class="col-12 col-xxl-8 mx-auto">
-            <div class="container m-x-3  pt-4 lh-sm" id="#infoHome">
+  <main id="main" class="col-12 col-xxl-8 mx-auto" >
+
+<!-- === Container =============================================== -->
+
+    <section id="infoContainer" class="">
+      <div class="container m-x-3  pt-4 lh-sm" id="#infoHome">
                 <h1>Curso de Bootstrap</h1>
         
             <hr>
@@ -57,9 +60,9 @@
                     Bootstrap é um framework front-end que fornece estruturas de CSS para a criação de sites e aplicações responsivas de forma rápida e simples.
                 </p>
 
-            </div>
+      </div>
 
-            <div class="container mt-4 mb-2 lh-sm\" id="#infoContainer">
+      <div class="container mt-4 mb-2 lh-sm\" id="#infoContainer">
 
               <h4>Estruturas com Contêineres.</h4>
               <hr>  
@@ -67,11 +70,11 @@
 
                 <p>Isso Implica que inicialmente devemos pensar no layout mobile, e depois adaptar para experiência de desktop. As classes de containers são baseadas em width a partir das marcas. Exemplo: <code>class="col-12 col-xxl-8 mx-auto"</code>. Neste trecho vemos primeiro a configuração do layout mobile primeiro (<code>col-12</code>), depois, a adaptação para telas a partir de 1320px (<code>col-xxl-8</code>).</p>
 
-            </div>
+      </div>
 
-<!-- === Tabela =============================================== -->
+    <!-- === Tabela =============================================== -->
 
-            <div class="container m-x-3 mt-2 mb-3 overflow-auto border-bo">
+      <div class="container m-x-3 mt-2 mb-3 overflow-auto border-bo">
                 <table class="table table-hover table-striped">
                     <thead>
                       <tr>
@@ -140,22 +143,22 @@
                     Fonte: Ricardo Maroquio (2021).
       
                   </div>
-            </div>
+      </div>
 
-<!-- === Ilustração =============================================== -->
+    <!-- === Ilustração =============================================== -->
 
-        <div class="container col-12 mx-auto">
+      <div class="container col-12 mx-auto">
 
 
-         <img src="src/img/print.png"  class="img-fluid" alt="">
+      <img src="src/img/print.png"  class="img-fluid" alt="">
 
-         <div id="souce">
+      <div id="souce">
 
           Fonte: Ricardo Maroquio (2021).
 
-        </div>
+      </div>
 
-<!-- === Vídeos =============================================== -->
+    <!-- === Vídeos =============================================== -->
 
         <div>
           <div id="lineVideos" class="flex justify-content-between ff 
@@ -174,7 +177,7 @@
         </div>
         </div>
 
-<!-- === Accordion =============================================== -->
+    <!-- === Accordion =============================================== -->
 
         <div class="">
           <div class="accordion" id="accordionExample">
@@ -214,18 +217,23 @@
               </div>
             </div>
           </div>
+    
         </div></div>
+      </div>
 
+    </section>
+  
 <!-- === Cores =============================================== -->
 
-<div class="container mt-4 mb-2 lh-sm\" id="#infoContainer">
+    <section id="infoColor" class="">
 
-  <h4>Cores e Customização.</h4>
-  <hr>
+      <div class="container">
 
-  <h5 class="mt-4">Cores de Padrões</h5>
+        <h4>Cores e Customização.</h4>
+        <hr>
 
-        <div class="container">
+        <h5 class="mt-4">Cores de Padrões</h5>
+
           <div class="row g-2 my-2">
              <div class="col-4 bg-primary text-white">
                 .bg-primary
@@ -261,12 +269,13 @@
                 .bg-transparent
              </div>
           </div>
-       </div>
-
-       <h5 class="mt-4">Cores de Variáveis</h5>
+      </div>
 
 
-       <div class="container">
+      <div class="container">
+
+        <h5 class="mt-4">Cores de Variáveis</h5>
+
         <div class="row g-2 my-2 text-center text-light">
 
           <div class="varColor1 var col-6">
@@ -295,9 +304,10 @@
           </div>
        </div>
 
-       </div>
+      </div>
 
-       <h5 class="mt-4">Alguns alertas possíveis</h5>
+       <div class="container">
+        <h5 class="mt-4">Alguns alertas possíveis</h5>
 
        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
@@ -335,20 +345,25 @@
           An example danger alert with an icon
         </div>
       </div>
+       </div>
 
 
 <!-- === Footer =============================================== -->
 
-    </div>
+    </section>
 
-    <footer id="#footer">
+  </main>
+
+<!-- === Footer =============================================== -->
+
+  <footer id="footer">
         <br>
   
         <a href="https://www.linkedin.com/in/r%C3%B4mulo-henri-437763213/">Desenvolvido por Rômulo Henri</a> | <a href="https://github.com/henri2023">Github</a> |  <a href=>ReadMe</a>
       
-      </footer>
+  </footer>
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js">
-    </script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js">
+  </script>
 </body>
 </html>

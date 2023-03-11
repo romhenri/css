@@ -1,6 +1,5 @@
 {
-    "cSpell.words": [
-        "Maroquio"
-    ],
-    "liveServer.settings.port": 5501
+	"cSpell.words": ["Maroquio"],
+	"liveServer.settings.port": 5501,
+	"editor.bracketPairColorization.enabled": true
 }
