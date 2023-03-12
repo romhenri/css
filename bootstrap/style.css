@@ -145,3 +145,9 @@ ul li {
     }
 
 }
+
+#sectionModal button {
+    background-color: indigo;
+    border: none;
+    text-align: center;
+}
