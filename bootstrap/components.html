@@ -108,7 +108,7 @@
 			<!--=== Carousel ==============-->
 
 			<section id="sectionCarousel" class="">
-				<div class="mx-auto mt-4 mb-2">
+				<div class="container mx-auto mt-4 mb-2">
 					<h4>Carrossel</h4>
 					<hr />
 
@@ -195,8 +195,8 @@
 
 			<!--=== Modais ==============-->
 
-			<section id="sectionModal" class="">
-				<div class="mt-4 mb-2 mx-auto">
+			<section id="sectionModal" class="d-flex flex-row">
+				<div class="container mt-4 mb-2 mx-auto">
 					<h4>Modais</h4>
 					<hr />
 
@@ -216,6 +216,16 @@
 						>
 							Ativar Modal Pop-Up
 						</button>
+
+						<button
+							class="btn btn-primary"
+							type="button"
+							data-bs-toggle="offcanvas"
+							data-bs-target="#offcanvasWithBothOptions"
+							aria-controls="offcanvasWithBothOptions"
+						>
+							Ativar Off-Canvas
+						</button>
 					</div>
 
 					<div
@@ -232,7 +242,7 @@
 										class="modal-title"
 										id="exampleModalLabel"
 									>
-										Modal title
+										Modal
 									</h5>
 									<button
 										type="button"
@@ -242,7 +252,8 @@
 									></button>
 								</div>
 								<div class="modal-body">
-									Esse é um exemplo de Modal <Pop-Up></Pop-Up>
+									Esse é um exemplo de Modal.
+									<Pop-Up></Pop-Up>
 								</div>
 								<div class="modal-footer">
 									<button
@@ -259,6 +270,36 @@
 										Save changes
 									</button>
 								</div>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<div
+							class="offcanvas offcanvas-start"
+							data-bs-scroll="true"
+							tabindex="-1"
+							id="offcanvasWithBothOptions"
+							aria-labelledby="offcanvasWithBothOptionsLabel"
+						>
+							<div class="offcanvas-header">
+								<h5
+									class="offcanvas-title"
+									id="offcanvasWithBothOptionsLabel"
+								>
+									Off-Canvas
+								</h5>
+								<button
+									type="button"
+									class="btn-close"
+									data-bs-dismiss="offcanvas"
+									aria-label="Close"
+								></button>
+							</div>
+							<div class="offcanvas-body">
+								<p>
+									Exemplo de Off-Canvas.
+								</p>
 							</div>
 						</div>
 					</div>
