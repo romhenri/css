@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>User Info</title>
+		<style>
+			* {
+				font-family: 'Segoe UI', Verdana, sans-serif;
+				text-align: center;
+			}
+
+			section {
+				padding: 10px 10px;
+				margin: 20px;
+				min-width: 100px;
+				min-height: 100px;
+				box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+				border-radius: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<h1>User Info</h1>
+			<hr />
+			<p>
+				<strong>InnerWidth:</strong>
+				<span id="innerWidth"></span>
+				px
+			</p>
+			<p>
+				<strong>InnerHeight:</strong>
+				<span id="innerHeight"></span>
+				px
+			</p>
+		</section>
+
+		<script>
+			const infoInnerHeight = document.getElementById('innerHeight')
+			const infoInnerWidth = document.getElementById('innerWidth')
+
+			updateData()
+
+			window.addEventListener('resize', () => updateData())
+
+			function updateData() {
+				infoInnerHeight.innerHTML = `${window.innerHeight}`
+				infoInnerWidth.innerHTML = `${window.innerWidth}`
+			}
+		</script>
+	</body>
+</html>
