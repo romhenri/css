@@ -26,6 +26,11 @@
 			<h1>User Info</h1>
 			<hr />
 			<p>
+				<strong>UserBrowser:</strong>
+				<span id="userBrowser"></span>
+				px
+			</p>
+			<p>
 				<strong>InnerWidth:</strong>
 				<span id="innerWidth"></span>
 				px
@@ -38,6 +43,11 @@
 		</section>
 
 		<script>
+			console.log(window)
+			console.log(document)
+			console.log(navigator)
+
+			const userBrowser = document.getElementById('userBrowser')
 			const infoInnerHeight = document.getElementById('innerHeight')
 			const infoInnerWidth = document.getElementById('innerWidth')
 
@@ -46,6 +56,7 @@
 			window.addEventListener('resize', () => updateData())
 
 			function updateData() {
+				userBrowser.innerHTML = `${navigator.userAgent}`
 				infoInnerHeight.innerHTML = `${window.innerHeight}`
 				infoInnerWidth.innerHTML = `${window.innerWidth}`
 			}
